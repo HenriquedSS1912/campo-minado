@@ -1,9 +1,0 @@
- Nesse projeto tive o cuidado em separ a logica dos componentes.
- 
- Implementei toda a logica do jogo em JS. Criando assim o tabuleiro, 
- o objeto associado a cada campo com suas propriedades 
- (se esta esplodido, se esta aberto, quantidade de minas por perto e etc).
-
- Interessante que o calculo das minas ao redor do campo não é feito no começo da aplicação, 
- utilizei a estrategia Lazy Load, fazendo com que calculo das minas ao redor seja de acordo
-  a sua abertura de cada campo selecionado pelo usuario.
