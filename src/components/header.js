@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import general from '../styles/general';
 import Flag from './flag';
-
 
 export default function Header(props) {
     return (
@@ -12,11 +12,10 @@ export default function Header(props) {
                 </TouchableOpacity>
                 <Text style={styles.flagsLeft}>= {props.flagsLeft}</Text>
             </View>
-            <TouchableOpacity style={styles.button} onPress={props.onNewGame}>
-                <Text style={styles.buttonLabel}>New Game</Text>
+            <TouchableOpacity style={{ ...general.button, backgroundColor: '#999' }} onPress={props.onNewGame}>
+                <Text style={{ ...general.buttonLabel, color: '#DDD' }}>Novo Jogo</Text>
             </TouchableOpacity>
         </View>
-
     )
 }
 

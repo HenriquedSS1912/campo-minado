@@ -1,5 +1,3 @@
- resolver seguinte problema no metodo TypeError: undefined is not an object (evaluating 'field.openned')
- 
  Nesse projeto tive o cuidado em separ a logica dos componentes.
  
  Implementei toda a logica do jogo em JS. Criando assim o tabuleiro, 

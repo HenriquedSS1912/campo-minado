@@ -2,7 +2,6 @@ import React from 'react';
 import { View, StyleSheet } from 'react-native';
 
 export default function Flag(props) {
-    const {bigger} = props;
     return (
         <View style={styles.container}>
             <View style={[styles.flagpole, props.bigger ? styles.flagpoleBigger : null]}/>

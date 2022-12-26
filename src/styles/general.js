@@ -1,12 +1,4 @@
-import { StyleSheet, Platform, Dimensions } from 'react-native';
-
-const windowWidth = Dimensions.get('window').width;
-
-export const COLORS = {
-    white: '#fff',
-    black: '#000',
-    // your colors
-}
+import { StyleSheet } from 'react-native';
 
 export default general = StyleSheet.create({
 
@@ -28,5 +20,31 @@ export default general = StyleSheet.create({
         width: 20,
         borderRadius: 3,
         backgroundColor: 'black',
+    },
+    modal: {
+        padding: 10,
+    },
+    containerModal: {
+        borderRadius: 15,
+        overflow: 'hidden',
+    },
+    cardModal: {
+        padding: 10,
+        width: '80%',
+    },
+    button: {
+        marginVertical: 7,
+        padding: 10,
+        width: 200,
+        borderRadius: 25,
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    buttonLabel: {
+        fontSize: 20,
+        color: '#EEE',
+        fontWeight: 'bold',
     }
 });
